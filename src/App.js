@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       
         < Navbar />
-        <ItemListContainer titular="Bienvenido a la tienda" nombre ="Joaco" />
+        <ItemListContainer titular="Bienvenido a la tienda" nombre ="usuario" />
         < Maincont/>
         < Footer />
     </div>
