@@ -6,7 +6,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 export const Maincont = () => {
     return ( 
       <div className= "imagenesGaleria">
-    <ImageList sx={{ width: 900, height: 450 }} variant="woven" cols={6} gap={8} >
+    <ImageList sx={{ width: 700, height: 350 }} variant="woven" cols={6} gap={8} >
     {itemData.map((item) => (
       <ImageListItem key={item.img}>
         <img
