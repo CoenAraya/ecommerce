@@ -1,14 +1,30 @@
+import { useEffect, useState } from "react"
+import { pedirDatos } from "../../helpers/pedirDatos"
+import ItemList from "../ItemList/ItemList"
 
 
+export const ItemListContainer = () => {
+   
+    const [productos, setProductos] = useState([])
 
-export const ItemListContainer = (props) => {
+    useEffect(() => {
+        pedirDatos()
+            .then( (res) => {
+                setProductos(res)
+            })
+            .catch( (error) => {
+                console.log(error)
+            })
+            .finally(() => {
+                // console.log("Fin del proceso")
+            })
+    }, [])
 
-    const {titular, nombre} = props
 
-    return(
-        <div>
-            <h1>{titular} !</h1>
-            <p>Bienvenido {nombre}</p>
+    return (
+        <div className="prodContainer">
+            <ItemList productos={productos}/>
         </div>
     )
 }
+

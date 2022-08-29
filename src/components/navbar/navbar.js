@@ -1,4 +1,4 @@
-import logo from '../../logo.png';
+import logo from '../../assets/logo.png';
 import './navbar.scss';
 import {CartWidget} from '../cart/cartWidget';
 

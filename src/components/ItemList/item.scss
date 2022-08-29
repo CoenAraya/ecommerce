@@ -1,0 +1,27 @@
+.stockContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    padding: 5px;
+
+}
+
+.imgDiv{
+    padding: 5px;
+
+
+}
+
+.imgCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 250px;
+    height: 550px;
+    border-style: groove;
+    padding: 5px;
+    margin: 5px;
+}
+
