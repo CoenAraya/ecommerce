@@ -1,15 +1,16 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 
 
 export const Contador = (producto) => {
 
+    const {stock} = producto
     
     const [counter, setCounter] = useState(1)
 
     
     const handleSumar = () => {
-        if(counter < producto.stock)
+        if(counter < stock)
         setCounter(counter + 1)
     }
 
