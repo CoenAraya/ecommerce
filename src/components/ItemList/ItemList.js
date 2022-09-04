@@ -1,5 +1,5 @@
 import Item from "../Item/Item"
-import './item.scss';
+import './itemList.scss';
 
 
 

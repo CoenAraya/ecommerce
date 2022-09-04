@@ -5,7 +5,7 @@ export const Contador = (producto) => {
     
     
     return (
-        <div className="container">
+        <div className="container contador">
             <button onClick={onDecrement} className="btn btn-outline-primary">-</button>
             <span className="mx-2">{counter}</span>
             <button onClick={onAdd} className="btn btn-primary">+</button>

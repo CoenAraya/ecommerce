@@ -6,9 +6,7 @@ export const Loading = () => {
     return (
         <div className='spinner'>
             <RingLoader  color="#8a7415" className='itemSpinner'/>
-            <RingLoader  color="#8a7415" className='itemSpinner'/>
-            <RingLoader  color="#8a7415" className='itemSpinner'/>
-            <RingLoader  color="#8a7415" className='itemSpinner'/>
+            
         </div>
     )
 }

@@ -1,13 +1,3 @@
-.stockContainer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    justify-content: center;
-    padding: 5px;
-
-}
-
 .imgDiv{
     padding: 5px;
 
@@ -23,5 +13,5 @@
     border-style: groove;
     padding: 5px;
     margin: 5px;
+    text-align: center;
 }
-

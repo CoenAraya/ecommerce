@@ -1,7 +1,6 @@
-.App {
+.App h2{
   text-align: center;
 }
-
 
 .App-header {
   background-color: #282c34;
@@ -15,21 +14,9 @@
   padding: 200px;
 }
 
-
-
-.navBarOn{
-  display: grid;
-  grid-template-columns: repeat(6 ,1fr) ;
-  align-items: center;
-  list-style: none;
-  color: white;
-  background-color: black;
-
-  a:link, a:visited, a:active {
-    text-decoration:none;
-    color: white
-}
-  .navBarOn:hover{
-    background-color: rgb(15, 15, 37);
-  }
+.linkBoot{
+  display: flex;
+  text-decoration: none;
+  color: black;
+   
 }

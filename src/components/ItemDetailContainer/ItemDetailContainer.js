@@ -1,23 +1,24 @@
 import { useEffect, useState } from "react"
 import { pedirDatos } from "../../helpers/pedirDatos"
-import ItemList from "../ItemList/ItemList"
+import ItemDetail from "../itemDetail/itemDetail"
 import { Loading } from "../loading/loading"
 import { useParams } from "react-router-dom"
+import './ItemDetailContainer.scss'
 
-export const ItemListContainer = () => {
+export const ItemDetailContainer = () => {
    
-    const [productos, setProductos] = useState([])
+    const [item, setItem] = useState([])
     const [loading, setloading] = useState(false);
 
-    const {categoryId} = useParams()
+    const {itemId} = useParams()
     
     useEffect(() => {
         setloading(true)
         pedirDatos()
             .then( (res) => {
-                if(!categoryId){
-                setProductos(res)
-            }else{setProductos(res.filter((prod)=> prod.category === categoryId))
+                if(!itemId){
+                setItem(res)
+            }else{setItem(res.find((prod)=> prod.id === Number(itemId)))
             }})
             .catch( (error) => {
                 console.log(error)
@@ -25,7 +26,7 @@ export const ItemListContainer = () => {
             .finally(() => {
                 setloading(false)
             })
-    }, [categoryId])
+    }, [itemId])
 
     if(loading){
         return(
@@ -34,7 +35,8 @@ export const ItemListContainer = () => {
         else{
     return (
         <div className="prodContainer">
-            <ItemList productos={productos}/>
+            <ItemDetail item={item}/>
+           
         </div>
     )
 }
