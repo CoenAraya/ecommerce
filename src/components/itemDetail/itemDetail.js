@@ -25,7 +25,7 @@ const ItemDetail = ( {item} ) => {
             <h4>{item.nombre}</h4>
             
             <img className="imgDivDetail" alt={item.nombre} src={item.img}/>
-            <p>Precio: {item.precio}</p>
+            <p>Precio: ${item.precio}</p>
             <small>Stock disponible: {item.stock}</small>
             <p>{item.desc}</p>
             <Contador onAdd= {handleSumar} counter= {counter} onDecrement= {handleRestar}/>
