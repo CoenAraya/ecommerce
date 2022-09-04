@@ -11,21 +11,21 @@ export const NavbarCollapsed = () => {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home"><a href="/#"><img src={logo} className="App-logo" alt="logo" /></a></Navbar.Brand>
+        <Navbar.Brand ><a href="/#"><img src={logo} className="App-logo" alt="logo" /></a></Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             
             <Nav.Link href="#Conocenos">Conocenos</Nav.Link>
             <NavDropdown title="Productos" id="collasible-nav-dropdown">
-              <NavDropdown.Item ><Link to="/products/sillones" className='linkBoot'> Sillones</Link></NavDropdown.Item>
-              <NavDropdown.Item ><Link to="/products/espejo" className='linkBoot'> Espejos</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/products/alfombra" className='linkBoot'> Alfombras</Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/products/deco" className='linkBoot'> Decoracion</Link></NavDropdown.Item>
+              <Link to="/products/sillones" className='linkBoot'> Sillones</Link>
+              <Link to="/products/espejo" className='linkBoot'> Espejos</Link>
+              <Link to="/products/alfombra" className='linkBoot'> Alfombras</Link>
+              <Link to="/products/deco" className='linkBoot'> Decoracion</Link>
               <NavDropdown.Divider />
-              <NavDropdown.Item>
+              
               <Link to="/products" className='linkBoot'> Todos los productos</Link>
-              </NavDropdown.Item>
+              
             </NavDropdown>
           </Nav>
           <Nav>
