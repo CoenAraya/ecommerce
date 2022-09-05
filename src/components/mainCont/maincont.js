@@ -11,7 +11,7 @@ export const Maincont = () => {
             <hr></hr>
             <p>Tu casa, tu hogar.</p>
             <div className= "imagenesGaleria">
-               <ImageList sx={{ width: 1200, height: 314 }} variant="woven" cols={12} gap={8} >
+               <ImageList sx={{ width: 1118, height: 314 }} variant="woven" cols={12} gap={8} className="firmGale">
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
