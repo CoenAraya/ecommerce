@@ -13,14 +13,14 @@ function App() {
             < NavbarCollapsed />
 
         <Routes>
-          <Route path="/" element= {< Maincont/>}/>
+          <Route path="/" element= {< ItemListContainer/> }/>
           <Route path="/products" element= {< ItemListContainer/> }/>
           <Route path="/products/:categoryId" element= {< ItemListContainer/> }/>
           <Route path="/item/:itemId" element= {< ItemDetailContainer/> }/>
           <Route path="*" element={<Navigate to="/"/>}/>
         </Routes>
             
-            
+        < Maincont/>
             < Footer />
         </BrowserRouter>
     </div>

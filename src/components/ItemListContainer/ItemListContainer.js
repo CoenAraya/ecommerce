@@ -34,6 +34,7 @@ export const ItemListContainer = () => {
         else{
     return (
         <div className="prodContainer">
+            <h2>{categoryId ? categoryId.toUpperCase() : "TODOS LOS PRODUCTOS"} </h2>
             <ItemList productos={productos}/>
         </div>
     )

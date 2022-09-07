@@ -4,14 +4,15 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { itemData } from './signature';
 
+
 export const Maincont = () => {
     return ( 
         <div className="container my-5">
-            <h2>Bienvenido !</h2>
+            
             <hr></hr>
             <p>Tu casa, tu hogar.</p>
             <div className= "imagenesGaleria">
-               <ImageList sx={{ width: 1118, height: 314 }} variant="woven" cols={12} gap={8} className="firmGale">
+               <ImageList sx={{ width: 1450, height: 314 }} variant="woven" cols={12} gap={8} className="firmGale">
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>
                     <img

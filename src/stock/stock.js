@@ -5,7 +5,7 @@ export const stock = [
         precio: 2500,
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2021/11/decoracion-living-768x512.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
-        category: 'deco',
+        category: 'decoracion',
         desc: 'Hechos de Vinilo impresos de alta calidad, sobre madera MDF, únicos en el mercado con 9mm de espesor de la madera.'
 
     },
@@ -15,7 +15,7 @@ export const stock = [
         precio: 3000,
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2018/07/alfombra-casa-muebles.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 30,
-        category: 'alfombra',
+        category: 'alfombras',
         desc: `Alfombra Moderna Vinílica
         Ideal para Cocinas, Baños, Balcones, Playroom, Galerias, Lavadero etc.
 `
@@ -26,7 +26,7 @@ export const stock = [
         precio: 3000,
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/08/paredes-tadelakt-microcemento-768x576.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
-        category: 'espejo',
+        category: 'espejos',
         desc: `Espejo de alta calidad de 3mm de espesor, no deforma.`
         
     },
@@ -81,7 +81,7 @@ export const stock = [
         precio: 900,
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/07/frutas-canasto-cocina.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
-        category: 'deco',
+        category: 'decoracion',
         desc: 'Un gran producto'
     },
     {
@@ -90,7 +90,7 @@ export const stock = [
         precio: 1400,
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2021/02/macetas-cemento.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
-        category: 'deco',
+        category: 'decoracion',
         desc: 'Un gran producto'
     },
     {
@@ -99,7 +99,7 @@ export const stock = [
         precio: 3000,
         img: 'https://www.imirador.cl/wp-content/uploads/2020/10/12-tipos-diferentes-de-decoracion-para-tu-hogar.jpg',
         stock: 20,
-        category: 'deco',
+        category: 'decoracion',
         desc: 'Un gran producto'
     },
     {
@@ -108,7 +108,7 @@ export const stock = [
         precio: 1000,
         img: 'https://www.lavidalucida.com/wp-content/uploads/2015/11/decoración-con-manualidades-para-renovar-el-hogar.jpg',
         stock: 20,
-        category: 'espejo',
+        category: 'espejos',
         desc: 'Un gran producto'
     },
 ]
