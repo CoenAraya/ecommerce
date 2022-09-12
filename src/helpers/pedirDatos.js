@@ -9,7 +9,7 @@ export const pedirDatos = () => {
             setTimeout(() => {
                 resolve(stock)
                 
-            }, 2000 )
+            }, 50 )
         }
     
     )

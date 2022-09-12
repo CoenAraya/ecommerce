@@ -1,23 +1,38 @@
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/CartContext";
 import {Contador} from '../ItemCount/ItemCount';
-import { useState } from "react";
+import {Select} from '../Select/Select'
+import { Link } from "react-router-dom";
 import './itemDetail.scss'
 
 const ItemDetail = ( {item} ) => {
 
-    const {stock} = item
-
-    const [counter, setCounter] = useState(1)
-
     
-    const handleSumar = () => {
-        if(counter < stock)
-        setCounter(counter + 1)
-    }
+    const [tipos, setTipos] = useState(0)
+    const [medida, setMedida] = useState(0)
+    const [cantidad, setCantidad] = useState(1)
+    const {addToCart, isInCart} = useContext(CartContext)
+    
+    
+    
 
-    const handleRestar = () => {
-        if (counter > 1 ) {
-            setCounter(counter - 1)
+    const handleAgregar = () => {
+        const itemToCart = {
+            id: item.id,
+            nombre: item.nombre,
+            precio: item.precio,
+            img: item.img,
+            detalle: item.desc,
+            tipos,
+            medida,
+            cantidad
+
+            
+
         }
+        addToCart(itemToCart)
+        
+        
     }
 
     return (
@@ -28,8 +43,25 @@ const ItemDetail = ( {item} ) => {
             <p>Precio: ${item.precio}</p>
             <small>Stock disponible: {item.stock}</small>
             <p>{item.desc}</p>
-            <Contador onAdd= {handleSumar} counter= {counter} onDecrement= {handleRestar}/>
+            {item.tipo?
+            <Select options={item.tipo} onSelect= {setTipos}/>
+            : null}
+            {item.tamaño?
+            <Select options={item.tamaño} onSelect= {setMedida}/>
+            : null}
+            {item.precio > 3000 ?
+            <div className="envioGratis"> Este producto tiene envio gratis !</div>
+            : null}
             
+            {isInCart(item.id)? 
+            <Link to="/cart>" className="btn btn-sucess">Terminar compra</Link>
+            :
+            <Contador  
+            counter= {cantidad} 
+            cantMax= {item.stock}
+            agregar={handleAgregar} 
+            setCounter= {setCantidad}/>
+            }
             
         </div>
     )

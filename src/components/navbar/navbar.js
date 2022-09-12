@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import {CartWidget} from '../cart/cartWidget'
+import {CartWidget} from '../cartWidget/cartWidget'
 import logo from '../../assets/logo.png';
 import {Link} from 'react-router-dom'
 
@@ -30,9 +30,9 @@ export const NavbarCollapsed = () => {
           </Nav>
           <Nav>
             <Nav.Link href="#logs">Log In/ Log Out</Nav.Link>
-            <Nav.Link eventKey={2} href="#cart">
+            
             <CartWidget/>
-            </Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -6,8 +6,14 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2021/11/decoracion-living-768x512.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'decoracion',
-        desc: 'Hechos de Vinilo impresos de alta calidad, sobre madera MDF, únicos en el mercado con 9mm de espesor de la madera.'
-
+        desc: 'Hechos de Vinilo impresos de alta calidad, sobre madera MDF, únicos en el mercado con 9mm de espesor de la madera.',
+        tamaño: [
+            {value: 'Chico', texto: 'Chico'},
+            {value: 'Mediano', texto: 'Mediano'},
+            {value: 'Grande', texto: 'Grande'},
+           
+                 
+        ]
     },
     {
         id: 2,
@@ -17,8 +23,15 @@ export const stock = [
         stock: 30,
         category: 'alfombras',
         desc: `Alfombra Moderna Vinílica
-        Ideal para Cocinas, Baños, Balcones, Playroom, Galerias, Lavadero etc.
-`
+        Ideal para Cocinas, Baños, Balcones, Playroom, Galerias, Lavadero etc.`,
+        tamaño: [
+            {value: 'Chico', texto: 'Chico'},
+            {value: 'Mediano', texto: 'Mediano'},
+            {value: 'Grande', texto: 'Grande'},
+           
+                 
+        ]
+
     },
     {
         id: 3,
@@ -27,8 +40,14 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/08/paredes-tadelakt-microcemento-768x576.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'espejos',
-        desc: `Espejo de alta calidad de 3mm de espesor, no deforma.`
-        
+        desc: `Espejo de alta calidad de 3mm de espesor, no deforma.`,
+        tamaño: [
+            {value: 'Chico', texto: 'Chico'},
+            {value: 'Mediano', texto: 'Mediano'},
+            {value: 'Grande', texto: 'Grande'},
+           
+                 
+        ]
     },
     {
         id: 4,
@@ -37,7 +56,17 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/08/color-block-hogar-768x576.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'sillones',
-        desc: 'Sillones individuales de excelente'
+        desc: 'Sillones individuales de excelente',
+        tipo: [
+            {value: 'Chenille', texto: 'Chenille'},
+            {value: 'Lino', texto: 'Lino'},
+            {value: 'Pana', texto: 'Pana'},
+            {value: 'Eco cuero', texto: 'Eco cuero'},
+            {value: 'Tela', texto: 'Tela'},
+            {value: 'Tapizado', texto: 'Tapizado'},
+            {value: 'Plástico', texto: 'Plástico'},
+                       
+        ]
     },
     {
         id: 5,
@@ -46,7 +75,17 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/07/papel-tapiz-flores-768x512.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'sillones',
-        desc: 'Un gran producto'
+        desc: 'Un gran producto',
+        tipo: [
+            {value: 'Chenille', texto: 'Chenille'},
+            {value: 'Lino', texto: 'Lino'},
+            {value: 'Pana', texto: 'Pana'},
+            {value: 'Eco cuero', texto: 'Eco cuero'},
+            {value: 'Tela', texto: 'Tela'},
+            {value: 'Tapizado', texto: 'Tapizado'},
+            {value: 'Plástico', texto: 'Plástico'},
+                       
+        ]
     },
     {
         id: 6,
@@ -55,7 +94,18 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/07/sillas-mimbre.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'sillones',
-        desc: 'Un gran producto'
+        desc: 'Un gran producto',
+        tipo: [
+            {value: 'Chenille', texto: 'Chenille'},
+            {value: 'Lino', texto: 'Lino'},
+            {value: 'Pana', texto: 'Pana'},
+            {value: 'Eco cuero', texto: 'Eco cuero'},
+            {value: 'Tela', texto: 'Tela'},
+            {value: 'Tapizado', texto: 'Tapizado'},
+            {value: 'Plástico', texto: 'Plástico'},
+                       
+        ]
+
     },
     {
         id: 7,
@@ -64,7 +114,18 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/07/muebles-mimbre-exterior.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'sillones',
-        desc: 'Un gran producto'
+        desc: 'Un gran producto',
+        tipo: [
+            {value: 'Chenille', texto: 'Chenille'},
+            {value: 'Lino', texto: 'Lino'},
+            {value: 'Pana', texto: 'Pana'},
+            {value: 'Eco cuero', texto: 'Eco cuero'},
+            {value: 'Tela', texto: 'Tela'},
+            {value: 'Tapizado', texto: 'Tapizado'},
+            {value: 'Plástico', texto: 'Plástico'},
+                       
+        ]
+
     },
     {
         id: 8,
@@ -73,7 +134,18 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/06/barra-cocina.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'sillones',
-        desc: 'Un gran producto'
+        desc: 'Un gran producto',
+        tipo: [
+            {value: 'Chenille', texto: 'Chenille'},
+            {value: 'Lino', texto: 'Lino'},
+            {value: 'Pana', texto: 'Pana'},
+            {value: 'Eco cuero', texto: 'Eco cuero'},
+            {value: 'Tela', texto: 'Tela'},
+            {value: 'Tapizado', texto: 'Tapizado'},
+            {value: 'Plástico', texto: 'Plástico'},
+                       
+        ]
+
     },
     {
         id: 9,
@@ -82,7 +154,14 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2022/07/frutas-canasto-cocina.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'decoracion',
-        desc: 'Un gran producto'
+        desc: 'Un gran producto',
+        tamaño: [
+            {value: 'Chico', texto: 'Chico'},
+            {value: 'Mediano', texto: 'Mediano'},
+            {value: 'Grande', texto: 'Grande'},
+           
+                 
+        ]
     },
     {
         id: 10,
@@ -91,7 +170,14 @@ export const stock = [
         img: 'https://mejorconsalud.as.com/wp-content/uploads/2021/02/macetas-cemento.jpg?auto=webp&quality=45&width=1920&crop=16:9,smart,safe',
         stock: 20,
         category: 'decoracion',
-        desc: 'Un gran producto'
+        desc: 'Un gran producto',
+        tamaño: [
+            {value: 'Chico', texto: 'Chico'},
+            {value: 'Mediano', texto: 'Mediano'},
+            {value: 'Grande', texto: 'Grande'},
+           
+                 
+        ]
     },
     {
         id: 11,
@@ -100,7 +186,14 @@ export const stock = [
         img: 'https://www.imirador.cl/wp-content/uploads/2020/10/12-tipos-diferentes-de-decoracion-para-tu-hogar.jpg',
         stock: 20,
         category: 'decoracion',
-        desc: 'Un gran producto'
+        desc: 'Un gran producto',
+        tamaño: [
+            {value: 'Chico', texto: 'Chico'},
+            {value: 'Mediano', texto: 'Mediano'},
+            {value: 'Grande', texto: 'Grande'},
+           
+                 
+        ]
     },
     {
         id: 12,
@@ -109,6 +202,13 @@ export const stock = [
         img: 'https://www.lavidalucida.com/wp-content/uploads/2015/11/decoración-con-manualidades-para-renovar-el-hogar.jpg',
         stock: 20,
         category: 'espejos',
-        desc: 'Un gran producto'
+        desc: 'Un gran producto',
+        tamaño: [
+            {value: 'Chico', texto: 'Chico'},
+            {value: 'Mediano', texto: 'Mediano'},
+            {value: 'Grande', texto: 'Grande'},
+           
+                 
+        ]
     },
 ]
