@@ -1,9 +1,32 @@
 .prodCarrito{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    border-style: solid;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    
 }
 
 .prodCarrito {img{
-    width: 100px;
+    max-width: 100px;
 }}
+
+.carritoVacio{
+    padding: 200px;
+    text-decoration:currentColor;
+
+}
+
+.precioPagar{
+    padding: 50px ;
+    background-color: rgb(252, 252, 164);
+    border-radius: 10px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.botonPagar{
+    margin: 20px;
+}

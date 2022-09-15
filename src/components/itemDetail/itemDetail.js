@@ -1,8 +1,8 @@
-import { useContext, useState } from "react";
-import { CartContext } from "../../context/CartContext";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext";
 import {Contador} from '../ItemCount/ItemCount';
 import {Select} from '../Select/Select'
-import { Link } from "react-router-dom";
 import './itemDetail.scss'
 
 const ItemDetail = ( {item} ) => {
@@ -11,8 +11,8 @@ const ItemDetail = ( {item} ) => {
     const [tipos, setTipos] = useState(0)
     const [medida, setMedida] = useState(0)
     const [cantidad, setCantidad] = useState(1)
-    const {addToCart, isInCart} = useContext(CartContext)
-    
+    const {cart, addToCart, isInCart} = useCartContext()
+    console.log(cart)
     
     
 
@@ -20,7 +20,7 @@ const ItemDetail = ( {item} ) => {
         const itemToCart = {
             id: item.id,
             nombre: item.nombre,
-            precio: item.precio,
+            precio: item.precio * cantidad,
             img: item.img,
             detalle: item.desc,
             tipos,
@@ -28,10 +28,10 @@ const ItemDetail = ( {item} ) => {
             cantidad
 
             
-
         }
-        addToCart(itemToCart)
+        console.log(cantidad)
         
+        addToCart(itemToCart)
         
     }
 
@@ -53,15 +53,20 @@ const ItemDetail = ( {item} ) => {
             <div className="envioGratis"> Este producto tiene envio gratis !</div>
             : null}
             
-            {isInCart(item.id)? 
-            <Link to="/cart>" className="btn btn-sucess">Terminar compra</Link>
+            {   
+                isInCart(item.id)
+            ? 
+            <div>
+            <hr></hr>
+            <Link to="/cart" className="btn btn-primary">Terminar compra</Link>
+            </div>
             :
             <Contador  
             counter= {cantidad} 
             cantMax= {item.stock}
             agregar={handleAgregar} 
             setCounter= {setCantidad}/>
-            }
+        }
             
         </div>
     )

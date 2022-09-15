@@ -3,6 +3,8 @@ import { pedirDatos } from "../../helpers/pedirDatos"
 import ItemList from "../ItemList/ItemList"
 import { Loading } from "../loading/loading"
 import { useParams } from "react-router-dom"
+import { db } from "../../firebase/firebase"
+
 
 export const ItemListContainer = () => {
    
