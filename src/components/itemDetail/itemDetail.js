@@ -11,8 +11,8 @@ const ItemDetail = ( {item} ) => {
     const [tipos, setTipos] = useState(0)
     const [medida, setMedida] = useState(0)
     const [cantidad, setCantidad] = useState(1)
-    const {cart, addToCart, isInCart} = useCartContext()
-    console.log(cart)
+    const { addToCart, isInCart} = useCartContext()
+    
     
     
 
@@ -29,7 +29,7 @@ const ItemDetail = ( {item} ) => {
 
             
         }
-        console.log(cantidad)
+        
         
         addToCart(itemToCart)
         

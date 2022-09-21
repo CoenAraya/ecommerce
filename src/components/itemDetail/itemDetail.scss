@@ -1,5 +1,6 @@
 .imgCardDetail{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     border-style: solid;
     padding: 5px;
     margin: 20px;

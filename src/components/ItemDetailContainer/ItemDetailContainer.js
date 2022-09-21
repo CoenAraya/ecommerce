@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react"
-import { pedirDatos } from "../../helpers/pedirDatos"
+import { db } from "../../firebase/firebase"
+import { doc, getDoc } from "firebase/firestore"
 import ItemDetail from "../itemDetail/itemDetail"
 import { Loading } from "../loading/loading"
 import { useParams } from "react-router-dom"
 import './ItemDetailContainer.scss'
+
 
 export const ItemDetailContainer = () => {
    
@@ -14,30 +16,28 @@ export const ItemDetailContainer = () => {
     
     useEffect(() => {
         setloading(true)
-        pedirDatos()
+        
+        const itemRef = doc(db, 'productos', itemId)
+
+        getDoc(itemRef)
             .then( (res) => {
-                if(!itemId){
-                setItem(res)
-            }else{setItem(res.find((prod)=> prod.id === Number(itemId)))
-            }})
-            .catch( (error) => {
-                console.log(error)
+                setItem({id: res.id, ...res.data()})
             })
             .finally(() => {
                 setloading(false)
             })
-    }, [itemId])
+    }, [])
 
     if(loading){
         return(
             <Loading/>
         )}
         else{
-    return (
-        <div className="prodContainer">
-            <ItemDetail item={item}/>
-           
-        </div>
+        return (
+            <div className="prodContainer">
+                <ItemDetail item={item}/>
+            
+            </div>
     )
 }
 }
