@@ -1,5 +1,5 @@
 import { useState, useContext,  useEffect, createContext } from 'react';
-
+import swal from 'sweetalert';
 
 export const CartContext = createContext()
 
@@ -35,6 +35,10 @@ export const CartProvider = ({children}) => {
     return cart.reduce((acc, item) => acc + item.precio, 0)
 }
 
+  const compraFinalizada = () => {
+    swal("Compra exitosa!", "Tus productos seran despachados en las proximas 24hs !", "success");
+    setCart([])
+  }
 
     useEffect(() => {
       localStorage.setItem('carrito', JSON.stringify(cart))
@@ -51,7 +55,8 @@ export const CartProvider = ({children}) => {
             isInCart,
             cartCant,
             removerItem,
-            cartPrecio
+            cartPrecio,
+            compraFinalizada
           }}>
             {children}
         </CartContext.Provider>

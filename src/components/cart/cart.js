@@ -26,7 +26,7 @@ export const Cart = () => {
                 <div onClick={() => removerItem(item.id)} className="btn btn-danger mx-2"> borrar</div>
             </div> )}
             <div className="precioPagar">Precio total de los productos en carrito ${cartPrecio()} </div>
-            <div className="btn btn-success mx-2 botonPagar">Pagar</div>
+            <Link to="/checkout" className="btn btn-success mx-2 botonPagar">Pagar</Link>
             </div>
             :
                 <Link to="/"><h3 className="carritoVacio">El carrito esta vacio, corre a llenarlo de productos !</h3></Link>
