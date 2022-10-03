@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-
 import ItemList from "../ItemList/ItemList"
 import { Loading } from "../loading/loading"
 import { useParams } from "react-router-dom"

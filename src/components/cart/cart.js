@@ -7,7 +7,7 @@ import "./cart.scss"
 export const Cart = () => {
 
     const {cart, removerItem, cartPrecio} = useContext(CartContext)
-    console.log(cart)
+
     
 
     return(

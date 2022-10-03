@@ -16,21 +16,20 @@ export const NavbarCollapsed = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             
-            <Nav.Link href="#Conocenos">Conocenos</Nav.Link>
-            <NavDropdown title="Productos" id="collasible-nav-dropdown">
-              <Link to="/products/sillones" className='linkBoot'> Sillones</Link>
-              <Link to="/products/espejos" className='linkBoot'> Espejos</Link>
-              <Link to="/products/alfombras" className='linkBoot'> Alfombras</Link>
-              <Link to="/products/decoracion" className='linkBoot'> Decoracion</Link>
-              <NavDropdown.Divider />
+            <Nav.Link href="/Conocenos">Conocenos</Nav.Link>
+                <NavDropdown title="Productos" id="collasible-nav-dropdown">
+                  <Link to="/products/sillones" className='linkBoot'> Sillones</Link>
+                  <Link to="/products/espejos" className='linkBoot'> Espejos</Link>
+                  <Link to="/products/alfombras" className='linkBoot'> Alfombras</Link>
+                  <Link to="/products/decoracion" className='linkBoot'> Decoracion</Link>
+                <NavDropdown.Divider />
               
               <Link to="/products" className='linkBoot'> Todos los productos</Link>
               
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#logs">Log In/ Log Out</Nav.Link>
-            
+                        
             <CartWidget/>
             
           </Nav>

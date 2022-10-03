@@ -1,5 +1,6 @@
 import { NavbarCollapsed} from './components/navbar/navbar';
 import { Footer} from './components/footer/footer'
+import { Conocenos} from './components/conocenos/conocenos'
 import { Maincont } from './components/mainCont/maincont';
 import {ItemListContainer} from '../src/components/ItemListContainer/ItemListContainer'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,6 +25,7 @@ function App() {
 
               <Routes>
                 <Route path="/" element= {< ItemListContainer/> }/>
+                <Route path="/conocenos" element= {< Conocenos/> }/>
                 <Route path="/products" element= {< ItemListContainer/> }/>
                 <Route path="/products/:categoryId" element= {< ItemListContainer/> }/>
                 <Route path="/item/:itemId" element= {< ItemDetailContainer/> }/>
